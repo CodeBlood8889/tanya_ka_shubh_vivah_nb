@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shubham & Tanya</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,500&family=Jost:wght@300;400;500;600&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ TAP TO OPEN ENVELOPE ============ -->
+  <div class="intro-loader" id="introLoader">
+    <div class="loader-content">
+      <p class="loader-blessing">॥ श्री गणेशाय नमः ॥</p>
+      <h2 class="loader-monogram">S <span>&amp;</span> T</h2>
+      <p class="loader-tagline">Wedding Invitation</p>
+      <div class="loader-tap-pulse">Tap to Open</div>
+    </div>
+  </div>
+
+  <!-- Audio Element -->
+  <audio id="weddingAudio" loop preload="auto" playsinline>
+    <source src="assets/mp3/asd.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="petal-canvas" id="petalCanvas"></div>
+
+  <!-- ============ LANDING ============ -->
+  <section class="landing">
+    <img src="assets/top_left.png" alt="image-top-left" class="top-left-decoration"> 
+    <img src="assets/top_right.png" alt="image-top-right" class="top-right-decoration">
+    
+    <p class="landing__blessing">॥ श्री गणेशाय नमः ॥</p>
+    
+    <div class="landing__couple-wrap">
+      <img class="couple" src="./assets/img/ggg.gif" alt="Illustration of Shubham and Tanya standing together" loading="eager">
+    </div>
+
+    <p class="landing__eyebrow">Save the Date</p>
+    <p class="landing__date">30 · 11 · 2026</p>
+    <p class="landing__names"><strong>Shubham</strong> <span class="landing__amp">&amp;</span> <strong>Tanya</strong> <br><span class="landing__sub">are getting married</span></p>
+
+    <div class="scroll-cue">
+      <span class="scroll-text">Scroll Down</span>
+      <svg viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="12" height="18" rx="6" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="7" cy="6" r="1.8" fill="currentColor" class="scroll-dot"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============ HERO ARCH CARD ============ -->
+  <section class="hero reveal">
+    <div class="hero__card">
+      <p class="hero__eyebrow">Together with their families</p>
+      <div class="hero__names">
+        <h1 class="hero__name">Shubham</h1>
+        <span class="hero__amp" aria-hidden="true">&amp;</span>
+        <h1 class="hero__name">Tanya</h1>
+      </div>
+      <p class="hero__tagline">Request the honor of your presence</p>
+      
+      <svg class="divider-motif" viewBox="0 0 220 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="draw-line" d="M2 20C40 4 80 4 110 20C140 36 180 36 218 20" stroke="currentColor" stroke-width="1.2"/>
+        <path class="fade-shape" d="M100 20C103 14 109 11 115 13C111 17 112 22 116 25C109 26 103 24 100 20Z" fill="currentColor"/>
+        <path class="fade-shape" d="M120 20C123 14 129 11 135 13C131 17 132 22 136 25C129 26 123 24 120 20Z" fill="currentColor" transform="scale(-1,1) translate(-255,0)"/>
+        <circle class="fade-shape" cx="110" cy="20" r="2.5" fill="currentColor"/>
+      </svg>
+
+      <p class="hero__details">
+        on <strong>Monday, 30th November 2026</strong><br>
+        at <strong>Enrise by Sayaji</strong>, Amravati, Maharashtra
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ MEMORIES / POLAROIDS ============ -->
+  <section class="memories reveal" id="memoriesSection">
+    <div class="memories__inner">
+      <p class="memories__eyebrow">Written in the stars</p>
+      <h2 class="memories__title">A Beautiful Beginning</h2>
+      
+      <div class="polaroid-scatter">
+        <!-- Polaroid 1 -->
+        <div class="polaroid p-1">
+          <div class="polaroid__img-wrap">
+             <img src="https://pub-6817c685c900465d941927a4f952d383.r2.dev/IMG_7485.jpg" alt="Shubham and Tanya" onerror="this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+          </div>
+          <p class="polaroid__caption">When our families met</p>
+        </div>
+        
+        <!-- Polaroid 2 -->
+        <div class="polaroid p-2">
+          <div class="polaroid__img-wrap">
+             <img src="https://pub-6817c685c900465d941927a4f952d383.r2.dev/Yaadein%20E1%20(533).JPG" alt="Shubham and Tanya" onerror="this.src='https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+          </div>
+          <p class="polaroid__caption">The perfect match</p>
+        </div>
+
+        <!-- Polaroid 3 -->
+        <div class="polaroid p-3">
+          <div class="polaroid__img-wrap">
+             <img src="https://pub-6817c685c900465d941927a4f952d383.r2.dev/Yaadein%20E1%20(101).JPG" alt="Shubham and Tanya" onerror="this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+          </div>
+          <p class="polaroid__caption">Stepping into forever</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS CAROUSEL (ANIMATED CHARACTERS) ============ -->
+  <section class="events reveal" id="eventsSection">
+    <!-- Perfectly Spaced Title Header -->
+    <div class="events-header">
+      <p class="events__eyebrow">The Celebrations</p>
+      <h2 class="events__title">Wedding Festivities</h2>
+      <p class="swipe-hint" id="swipeHint">← Swipe or scroll to explore →</p>
+    </div>
+
+    <div class="carousel" id="eventCarousel">
+      
+      <!-- Haldi Animated GIF -->
+      <article class="event-card" data-bg-color="#FFF8E3">
+        <div class="scene-layer" style="background-color: #FFF8E3;">
+          <video class="character-gif" autoplay muted loop playsinline preload="auto" poster="assets\haldi_poster.jpg">
+            <source src="./assets/haldi.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="glass-plate">
+          <h3 class="event-card__name">Haldi</h3>
+          <p class="event-card__date">29th November</p>
+        </div>
+      </article>
+
+      <!-- Sangeet Animated GIF -->
+      <article class="event-card" data-bg-color="#F5EEF8">
+        <div class="scene-layer" style="background-color: #F5EEF8;">
+          <video class="character-gif" autoplay muted loop playsinline preload="auto" poster="assets\sangeet_poster.jpg">
+            <source src="./assets/sangeet.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="glass-plate">
+          <h3 class="event-card__name">Sangeet</h3>
+          <p class="event-card__date">29th November</p>
+        </div>
+      </article>
+
+      <!-- Baarat Animated GIF -->
+      <article class="event-card" data-bg-color="#FFF2EA">
+        <div class="scene-layer" style="background-color: #FFF2EA;">
+          <video class="character-gif" autoplay muted loop playsinline preload="auto" poster="assets\shaadi_poster.jpg">
+            <source src="./assets/shaadi.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="glass-plate">
+          <h3 class="event-card__name">Shaadi</h3>
+          <p class="event-card__date">30th November</p>
+        </div>
+      </article>
+
+      <!-- Reception Animated GIF -->
+      <article class="event-card" data-bg-color="#FBF7EE">
+        <div class="scene-layer" style="background-color: #FBF7EE;">
+           <video class="character-gif" autoplay muted loop playsinline preload="auto" poster="assets\reception_poster.jpg">
+            <source src="./assets/reception.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="glass-plate">
+          <h3 class="event-card__name">Reception</h3>
+          <p class="event-card__date">30th November</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ VENUE & TRAVEL ============ -->
+  <section class="venue reveal" id="venueSection">
+    <div class="venue__inner">
+      <p class="venue__eyebrow">Where the magic happens</p>
+      <h2 class="venue__title">The Venue</h2>
+
+      <div class="venue__card">
+        <div class="venue__image-placeholder">
+          <svg viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="50" r="1.5" fill="var(--gold)" class="anim-star-1" />
+            <circle cx="160" cy="80" r="2" fill="var(--gold)" class="anim-star-2" />
+            <circle cx="140" cy="30" r="1" fill="var(--gold)" class="anim-star-3" />
+            <path d="M -20 180 Q 50 160 100 190 T 220 170" stroke="rgba(181, 137, 63, 0.3)" stroke-width="1.5" stroke-dasharray="4 4" />
+            <path d="M -20 200 Q 60 220 120 180 T 220 190" stroke="rgba(181, 137, 63, 0.2)" stroke-width="1.5" stroke-dasharray="4 4" />
+            <path d="M -20 220 Q 80 190 140 220 T 220 210" stroke="rgba(181, 137, 63, 0.1)" stroke-width="1.5" stroke-dasharray="4 4" />
+            <circle class="anim-radar-1" cx="100" cy="140" r="0" fill="none" stroke="var(--gold)" stroke-width="2" />
+            <circle class="anim-radar-2" cx="100" cy="140" r="0" fill="none" stroke="var(--gold)" stroke-width="2" />
+            <path class="anim-route-line" d="M 20 240 C 30 200, 70 190, 100 140" stroke="var(--surface)" stroke-width="3" stroke-linecap="round" fill="none" stroke-dasharray="150" stroke-dashoffset="150"/>
+            <g class="anim-map-pin">
+              <ellipse cx="100" cy="140" rx="15" ry="4" fill="rgba(0,0,0,0.3)" class="anim-pin-shadow" />
+              <g transform="translate(0, -10)">
+                <path d="M 100 140 Q 125 105 125 85 A 25 25 0 0 0 75 85 Q 75 105 100 140 Z" fill="var(--gold)" />
+                <circle cx="100" cy="85" r="10" fill="var(--wine-deep)" />
+                <circle cx="100" cy="85" r="4" fill="var(--surface)" />
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <h3 class="venue__name">Enrise by Sayaji</h3>
+        <p class="venue__address">
+          Amravati - Nagpur Highway<br>
+          Amravati, Maharashtra 444901
+        </p>
+
+        <a href="https://maps.app.goo.gl/uWL4pXvBxbMBLUAd6" target="_blank" class="venue__btn">
+          Get Directions
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RSVP SECTION ============
+  <section class="rsvp reveal" id="rsvpSection">
+    <div class="rsvp__inner">
+      <p class="rsvp__eyebrow">We can't wait</p>
+      <h2 class="rsvp__title">RSVP</h2>
+      
+      <div class="rsvp__card">
+        <form class="rsvp__form" id="rsvpForm">
+          
+          <div class="input-group">
+            <label for="guestName">Your Full Name</label>
+            <input type="text" id="guestName" name="guestName" placeholder="E.g. Shri Rajesh Baniya" required>
+          </div>
+
+          <div class="input-group">
+            <label for="attendance">Will you be attending?</label>
+            <div class="custom-select-wrap">
+              <select id="attendance" name="attendance" required>
+                <option value="" disabled selected>Please select...</option>
+                <option value="Joyfully Accept">Joyfully Accept</option>
+                <option value="Regretfully Decline">Regretfully Decline</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="guestCount">Number of Guests</label>
+            <input type="number" id="guestCount" name="guestCount" min="1" max="10" placeholder="1" required>
+          </div>
+
+          <button type="submit" class="rsvp__btn" id="rsvpBtn">Send RSVP</button>
+        </form>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Enhanced Aesthetic Footer Sign-Off -->
+  <div class="footer-signoff reveal">
+    <div class="footer-signoff__ornament">
+      <span></span>
+      <i>✦</i>
+      <span></span>
+    </div>
+    <p class="footer-signoff__vineet">Cordially inviting</p>
+    <p class="footer-signoff__family">
+      <span>Rajesh Baniya</span>
+      <span class="amp">&amp;</span>
+      <span>Family</span>
+    </p>
+  </div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
